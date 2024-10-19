@@ -74,7 +74,7 @@ func TestUpdate(t *testing.T) {
 func TestDelete(t *testing.T) {
 	t.Run("existing word", func(t *testing.T) {
 		word := "test"
-		dictionary := Dictionary{word, "test definition"}
+		dictionary := Dictionary{word: "test definition"}
 
 		dictionary.Delete(word)
 
